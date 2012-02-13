@@ -26,7 +26,7 @@
   <name>AIR Hello World!</name>
 
   <properties>
-      <flex.version>4.5.1.21328</flex.version>
+      <flex-version>4.5.1.21328</flex-version>
   </properties>
 
   <build>
@@ -51,23 +51,21 @@
     <dependency>
       <groupId>com.adobe.flex.framework</groupId>
       <artifactId>flex-framework</artifactId>
-      <version>${flex.version}</version>
+      <version>${flex-version}</version>
       <type>pom</type>
     </dependency>
 
     <dependency>
       <groupId>com.adobe.flex.framework</groupId>
       <artifactId>mobilecomponents</artifactId>
-      <version>${flex.version}</version>
+      <version>${flex-version}</version>
       <type>swc</type>
     </dependency>
 
     <dependency>
       <groupId>com.adobe.flex.framework</groupId>
-      <artifactId>spark</artifactId>
-      <!-- Need the mobile theme installed locally -->
-      <!--artifactId>mobile</artifactId-->
-      <version>${flex.version}</version>
+      <artifactId>mobile</artifactId>
+      <version>${flex-version}</version>
       <scope>theme</scope>
       <type>swc</type>
     </dependency>
@@ -75,10 +73,11 @@
     <dependency>
       <groupId>com.adobe.flexunit</groupId>
       <artifactId>flexunit</artifactId>
-      <version>0.85</version>
+      <version>4.0-beta-2</version>
       <type>swc</type>
       <scope>test</scope>
     </dependency>
+
   </dependencies>
 
   <!-- Repository and PluginRepository section for Flex SDK and compiler dependencies. 
